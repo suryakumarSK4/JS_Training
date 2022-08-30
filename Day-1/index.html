@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_TASKS</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <div class="container">
+  <!-- first -->
+    <div class="bg-dark date-time text-light d-flex pe-3">
+        <h1 class=" me-auto mx-auto">JS_TASKS</h1>
+        <div class="d-flex justify-content-evenly  my-auto">
+            <p class="showD "> </p>
+            <p class="showT "> </p>
+        </div>
+    </div>
+
+    <div class="date-time m-3">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Hours
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><button onclick="hour24()" class="dropdown-item">24 Hours</button></li>
+              <li><button onclick="hour12()" class="dropdown-item " >12 Hours</button></li>
+            </ul>
+          </div>
+    </div>
+<!-- first -->
+
+<!-- sec -->
+      <div class="row border border-dark mx-auto m-2 ">
+        <div class="row mb-2">
+          <p class="lead">Right Rotate String</p>
+        </div>
+        <div class="col-lg-3 col-sm-12 d-flex mb-2">
+          <input type="text" class="btn-secondary m-2 rotate form-control" placeholder="Enter a string">
+          <button class="btn btn-secondary" onclick="rightRotate()">Rotate</button>
+        </div>
+        <div class="col-lg-5 col-sm-12 border mb-2 p-2">
+          <p class="lead ans p-2"></p>
+        </div>
+      </div>
+<!-- sec -->
+
+<!-- Third -->
+<div class="row m-2 border border-secondary p-2">
+  <p class="lead">Christmas Date</p>
+  <div class="col-6 d-flex ">
+    <input type="date" class="form-control cDate me-2">
+    <button type="button ms-2" class="btn btn-primary " onclick="cDatefind()">Check</button>
+  </div>
+  <div class="col-6 border border-info me-0">
+    <p class="lead christmasDay"></p>
+  </div>
+</div>
+<!-- Third -->
+
+<!-- Fourth -->
+      <div class="calc m-3 border border-dark w-50 mx-auto">
+        <p class="lead p-3 ">Calculator</p>
+        <div class="row m-3">
+          <input type="text" class="form-control displaynum">
+        </div>
+        <div class="row m-3">
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(1)" value="1">1</button></div>
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(2)" value="2">2</button></div>
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(3)" value="3">3</button></div>
+        </div>
+        <div class="row m-3">
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(4)" value="4">4</button></div>
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(5)" value="5">5</button></div>
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(6)" value="6">6</button></div>
+        </div>
+        <div class="row m-3">
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(7)" value="7">7</button></div>
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(8)" value="8">8</button></div>
+          <div class="col-4 p-2 text-center"><button class="form-control" onclick="calc(9)" value="9">9</button></div>
+        </div>
+        <div class="row m-3">
+          <div class="col-3 p-2 text-center"><button class="form-control" onclick="mul()">*</button></div>
+          <div class="col-3 p-2 text-center"><button class="form-control" onclick="div()">/</button></div>
+          <div class="col-3 p-2 text-center"><button class="form-control" onclick="calc(0)" value="0">0</button></div>
+          <div class="col-3 p-2 text-center"><button class="form-control" onclick="eql()">=</button></div>
+        </div>
+        <div class="row p-2 m-3">
+          <button class="form-control" onclick="clr()">clear</button>
+        </div>
+      </div>
+<!-- Fourth -->
+
+<!-- Fifth -->
+      <div class="row border border-dark m-3">
+        <div class="row">
+          <p class="lead">Capitalize the first letter of each word of a given string.</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 p-3 d-flex">
+          <input class="form-control strInp">
+          <button class="ms-2 btn btn-secondary" onclick="capitalStr()">Change</button>
+        </div>
+        <div class="col-lg-6 col-sm-12 border border-info ">
+          <p class="lead strAns p-2"></p>
+        </div>
+      </div>
+<!-- Fifth -->
+</div>
+    <!-- SCRIPTS -->
+    <script src="demo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
