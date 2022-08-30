@@ -42,8 +42,8 @@ function hour12() {
   hour12t = setInterval((date) => {
     date = new Date();
     hour = date.getHours();
-    hour = hour > 9 ? hour : "0" + hour;
     hour = hour <= 12 ? hour + " PM " : hour - 12 + " AM ";
+    hour = hour > 9 ? hour : "0" + hour;
     min = date.getMinutes();
     min = min > 9 ? min : "0" + min;
     sec = date.getSeconds();
@@ -78,15 +78,18 @@ function hour24() {
 // Rotate String
 inputBox = document.querySelector('.rotate')
 res = document.querySelector('.ans');
-
+rotateVal = document.querySelector('.rotateVal');
 function rightRotate()
 {
     let str = inputBox.value;
-    let frtChar = inputBox.value.charAt(str.length-1);
-    let newChar =  str.slice(0,-1);
-    res.innerText = `${frtChar+newChar}`
-    console.log(frtChar+newChar);
+    let frtChar = str.slice(str.length-rotateVal.value,str.length);
+    // console.log(frtChar);
+    let newChar =  str.slice(0,(str.length-rotateVal.value));
+    // console.log(newChar);
+    res.innerText = `${frtChar}${newChar}`
+    // console.log(frtChar+" "+newChar);
 }
+// Rotate string
 
 // Christmas day Remaining
 dateBox = document.querySelector('.cDate');
