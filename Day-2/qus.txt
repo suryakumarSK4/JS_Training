@@ -1,0 +1,18 @@
+1) exotic obj
+2) use of object.defineProperty
+let user = {
+  name: "John"
+};
+
+Object.defineProperty(user, "name", {
+  writable: false
+});
+
+user.name = "Pete"; // Error: Cannot assign to read only property 'name'
+( once created like this we can't change the property of the Object
+if we change that will show error(cannot assign to read only property ,
+shows error only in 
+"strict mode" )
+
+
+3)
